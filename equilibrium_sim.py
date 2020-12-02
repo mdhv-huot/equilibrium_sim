@@ -34,7 +34,7 @@ class Equilibrium:
         self.addP = Spinner(title="Add or remove Products", low=-5000, high=50000, step=1000, value=0, width=150)
         # Setup bokeh plots
         p1 = figure(plot_width=400, plot_height=400)
-        p2 = figure(plot_width=400, plot_height=400)
+        p2 = figure(plot_width=350, plot_height=400)
         y1 = []
         y2 = []
         ratio = []
