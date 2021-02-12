@@ -1,7 +1,7 @@
 from bokeh.plotting import figure, output_file, show, curdoc
 from bokeh.layouts import column, layout, row
 from bokeh.models import CustomJS, Slider, Spinner, Button, ColumnDataSource
-import numpy as nop
+import numpy as np
 
 class Equil_vals():
     def __init__(self, rs, ps, fwd, bwd):
