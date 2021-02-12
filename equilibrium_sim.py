@@ -1,7 +1,7 @@
 from bokeh.plotting import figure, output_file, show, curdoc
 from bokeh.layouts import column, layout, row
 from bokeh.models import CustomJS, Slider, Spinner, Button, ColumnDataSource
-
+import numpy as nop
 
 class Equil_vals():
     def __init__(self, rs, ps, fwd, bwd):
@@ -12,7 +12,7 @@ class Equil_vals():
         try:
             self.ratio = self.ps / self.rs
         except ZeroDivisionError:
-            self.ratio = None
+            self.ratio = np.nan
 
     def advance_state(self):
         newps = round(self.rs * self.fwd)
